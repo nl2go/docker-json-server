@@ -1,0 +1,7 @@
+version: '2'
+services:
+  json-server:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    tty: true

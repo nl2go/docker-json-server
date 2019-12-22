@@ -12,5 +12,8 @@ COPY .docker/ /
 
 EXPOSE 3000
 
+WORKDIR /app
+
 ENTRYPOINT ["/docker-entrypoint.sh"]
-CMD ["json-server"]
+
+CMD ["json-server", "-H", "0.0.0.0", "db.json"]

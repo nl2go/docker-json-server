@@ -5,3 +5,5 @@ services:
       context: ./
       dockerfile: Dockerfile
     tty: true
+    ports:
+    - 3000:3000
